@@ -1,0 +1,35 @@
+/* Стили для области заголовка раздела */
+.section-header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #3498db; /* Цвет фона области заголовка */
+  padding: 5px 10px;
+  border: 1px solid #000;
+  color: #fff; /* Цвет текста области заголовка */
+}
+
+/* Общие стили для разделов */
+.section {
+  background-color: #f1f1f1; /* Цвет фона раздела */
+  padding: 20px;
+  border: 1px solid #000;
+  margin: 10px;
+  min-height: 200px; /* Минимальная высота раздела */
+  position: relative; /* Для правильного позиционирования области заголовка */
+}
+
+/* Стили для настольных компьютеров и планшетов */
+@media (min-width: 768px) {
+  .section {
+      width: 31%; /* Разделы занимают примерно треть ширины контейнера */
+      float: left;
+  }
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 767px) {
+  .section {
+      width: 100%; /* Разделы занимают всю ширину контейнера */
+  }
+}
